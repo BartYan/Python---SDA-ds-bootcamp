@@ -16,10 +16,10 @@
 grocery_list = {}
 
 product = input("Wpisz produkt z zakupów: ")
-price = input("Podaj jego cenę netto i podatek (4.50, 15): ")
+prize = input("Podaj jego cenę netto i podatek (4.50, 15): ")
 
 if product not in grocery_list:
-    grocery_list[product] = tuple(map(float, price.split(', ')))
+    grocery_list[product] = tuple(map(float, prize.split(', ')))
 
 print(grocery_list)
 
@@ -33,3 +33,12 @@ def calculate_brutto_prize(grocery_list):
 
     """
     pass
+    sum = 0
+    for item, tax in grocery_list.values:
+        items_prize = item * tax/100 + item
+        sum += items_prize
+
+    return sum
+    # return sum(prize+prize*tax*0.01 for prize, tax in grocery_list.values())
+
+print(f'Suma wynosi: {calculate_brutto_prize(grocery_list)}')

@@ -15,7 +15,6 @@
 """
 
 
-
 # Przykladowe rozwiazanie 1: iteracja po kazdym znaku i laczenie
 # wczesniej dobieramy wspolna dlugosc i ewentualny koniec stringu
 # jezeli ktorys z napisow jest dluzszy od drugiego

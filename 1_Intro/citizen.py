@@ -10,15 +10,18 @@
     Zwiększaj ją za każdym razem, kiedy tworzony będzie nowy obywatel.
 """
 
+
 class Citizen:
     total_number_of_citizens = 0
+
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
-        Citizen.total_number_of_citizens +=1
+        Citizen.total_number_of_citizens += 1
 
-    def set_nationality(self, nationality = 'Polska'):
+    def set_nationality(self, nationality='Polska'):
         self.nationality = nationality
+
 
 if __name__ == '__main__':
     czlowiek = Citizen('Adam', 'Adam')

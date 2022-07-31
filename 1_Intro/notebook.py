@@ -3,6 +3,7 @@
     Dopisz metody do obliczenia ceny brutto (+23% VAT) oraz zwiększenia ilości RAM-u.
 """
 
+
 class Notebook:
     def __init__(self, producent, netto, ram):
         self.producent = producent
@@ -16,7 +17,8 @@ class Notebook:
         self.ram += ilosc
         return self.ram
 
+
 if __name__ == '__main__':
-    laptop = Notebook('apple', 2500, 9,)
+    laptop = Notebook('apple', 2500, 9, )
     print(laptop.oblicz_brutto())
     print(laptop.zwieksz_ram(2))

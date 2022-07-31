@@ -35,10 +35,11 @@ def calculate_brutto_prize(grocery_list):
     pass
     sum = 0
     for item, tax in grocery_list.values:
-        items_prize = item * tax/100 + item
+        items_prize = item * tax / 100 + item
         sum += items_prize
 
     return sum
     # return sum(prize+prize*tax*0.01 for prize, tax in grocery_list.values())
+
 
 print(f'Suma wynosi: {calculate_brutto_prize(grocery_list)}')

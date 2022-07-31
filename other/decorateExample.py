@@ -15,7 +15,6 @@ def square_numbers(*args, potega = 2):
 
     return square
 
-
 if __name__ == '__main__':
     square_numbers(10, 2, potega=3)
 
